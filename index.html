@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>code connect</title>
+</head>
+<body>
+
+    <aside class="aside-menu">
+
+        <img src="./assets/logo/Logo_small.png" class="aside-menu__logo" alt="logo">
+
+        <nav class="aside-menu__nav">
+            <ul class="aside-menu__nav__list">
+                <li class="aside-menu__nav__list__item">
+                    <a href="#" class="aside-menu__nav__list__item__highligthed-button">Post</a>
+                </li>
+
+                <li class="aside-menu__nav__list__item">
+                    <a href="#" class="aside-menu__nav__list__item__normal-button">
+                        <img src="./assets/icons/SVG/feed.svg" alt="feed">
+                        Feed
+                    </a>
+                </li>
+
+                <li class="aside-menu__nav__list__item">
+                    <a href="#" class="aside-menu__nav__list__item__normal-button">
+                        <img src="./assets/icons/SVG/account_circle.svg" alt="profile">
+                        Profile
+                    </a>
+                </li>
+
+                <li class="aside-menu__nav__list__item">
+                    <a href="#" class="aside-menu__nav__list__item__normal-button">
+                        <img src="./assets/icons/SVG/info (1).svg" alt="about us">
+                        About us
+                    </a>
+                </li>
+
+                <li class="aside-menu__nav__list__item">
+                    <a href="#" class="aside-menu__nav__list__item__normal-button">
+                        <img src="./assets/icons/SVG/logout.svg" alt="exit">
+                        Exit
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </aside>
+
+    <main>
+        <div class="container-upload-image">
+            <div class="container-image">
+                <img src="./assets/img-general/gradient-ui-kit-collection_23-2149203472.jpg" alt="" class="main-image">
+            </div>
+            <button id="upload-button">Upload Image</button>
+            <input type="file" id="image-upload" accept="image/" style="display: none;">
+            <div class="container-image-name">
+                <p>image_project.png</p>
+                <img src="./assets/icons/SVG/chat (1).svg" alt="">
+            </div>
+        </div>
+
+        <div class="container-description">
+            <h2>New Project</h2>
+            <form>
+                <div>
+                    <label for="name">Project name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div>
+                    <label for="description">Project description</label>
+                    <textarea type="text" id="description" name="description"></textarea>
+                </div>
+                <div>
+                    <label for="tags">Tags</label>
+                    <input type="text" id="tags" name="tags">
+                </div>
+                <ul class="list-tags">
+                    <li>
+                        <p>Frontend</p>
+                        <img src="./assets/icons/SVG/close (3).svg" alt="">
+                    </li>
+                    <li>
+                        <p>Backend</p>
+                        <img src="./assets/icons/SVG/close (3).svg" alt="">
+                    </li>
+                </ul>
+                <div class="container-buttons">
+                    <button class="button-discard">Discard</button>
+                    <button class="button-post">Post</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
